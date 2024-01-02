@@ -19,24 +19,24 @@ Target <|- - Commander
 WarriorCommander - -|> Commander
 MagicianCommander - -|> Commander
 
-interface CommanderFactory {
+interface youxijiemian {
   + produceCommander(String):Commander
 }
 
-class WarriorFactory {
+class denglujiemian  {
   ~ produceCommander(String):Commander
 }
 
-class MagicianFactory {
+class jiesuanjiemian {
   ~ produceCommander(String):Commander
 }
 
 
-CommanderFactory <|- - WarriorFactory 
-CommanderFactory <|- - MagicianFactory
+CommanderFactory <|- -  youxijiemian
+CommanderFactory <|- - youxijiemian
 
-WarriorFactory ..> WarriorCommander
-MagicianFactory ..> MagicianCommander
+WarriorFactory ..> youxijiemianr
+MagicianFactory ..> youxijiemian
 
 
 @enduml
